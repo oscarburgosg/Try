@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<title>Salfa Diagnostico</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- BOOTSTRAP STYLES-->
+		<link href="assets/css/bootstrap.css" rel="stylesheet" />
+		<!-- FONTAWESOME STYLES-->
+		<link href="assets/css/font-awesome.css" rel="stylesheet" />
+		<!-- CUSTOM STYLES-->
+		<link href="assets/css/custom.css" rel="stylesheet" />
+
+		<!-- GOOGLE FONTS-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- TABLE STYLES-->
+    	<link href="assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+
+    	<!-- PANELES -->
+		<link rel="stylesheet" type="text/css" href="css/paneles.css">
+
+		<script language="JavaScript">
+			function login(id){
+			
+			var login = $("#login");
+			var contenido = $("#contenido_a_mostrar");
+			
+			login.css("display",(login.css("display")=="none"?"block":"none"));
+			contenido.css("display",(contenido.css("display")=="none"?"block":"none"));
+			}
+
+			function ver_detalle(id){
+			
+			var boton_ver = $("#boton_ver");
+			var detalle = $("#detalle_ot");
+			var boton_cerrar = $("#boton_cerrar");
+			var contenido = $("#contenido_a_mostrar");
+			
+			boton_ver.css("display",(boton_ver.css("display")=="none"?"block":"block"));
+			detalle.css("display",(detalle.css("display")=="none"?"block":"none"));
+			boton_cerrar.css("display",(boton_cerrar.css("display")=="none"?"block":"block"));
+			contenido.css("display",(contenido.css("display")=="none"?"block":"none"));
+			}
+
+			function cerrar_detalle(id){
+			
+			var boton_cerrar = $("#boton_cerrar");
+			var detalle = $("#detalle_ot");
+			var contenido = $("#contenido_a_mostrar");
+			
+			boton_cerrar.css("display",(boton_cerrar.css("display")=="none"?"block":"none"));
+			detalle.css("display",(detalle.css("display")=="none"?"block":"none"));
+			contenido.css("display",(contenido.css("display")=="none"?"block":"none"));
+			}
+			
+		</script>
+		
+</head>
+<body>
+	
+	<div id="detalle_revision" style="display:block;">
+		<div class="detalle_ot">
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			  	5789 - ED 88 79 - ASFALMIX SA - 421
+			  </div>
+			  <div class="panel-body">
+			    <div class="row">
+	                <div class="col-md-4">
+						Cliente : ANTARESMAQUINARIAS LTDA</br>
+						Patente / VIN : ZZ 99 99</br>
+						N° Interno : 7589</br>
+						Marca : MACK</br>
+						Modelo : CXU 613
+	                </div>
+	                <div class="col-md-4">
+							<h4>Observaciones Ingreso</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	                </div>
+	                <div class="col-md-4">
+							<h4>Observaciones Pre Evaluación</h4>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                </div>
+	            </div>
+	            <div class="row diagnostico">
+	            	<div class="col-md-12">
+	            		<div class="title"></div>
+	            		<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Diagnóstico</h3>
+						  </div>
+						  <div class="panel-body">
+						  	<div class="col-md-4">
+			                	<div class="observaciones">
+				                	<div class="input-group">
+										<span class="input-group-addon">Sistema</span>
+										<select class="form-control">
+										  <option>Seleccionar</option>
+										  <option>Tren Delantero</option>
+										  <option>Tren Delantero</option>
+										  <option>Tren Delantero</option>
+										  <option>Tren Delantero</option>
+										</select>
+									</div>
+									<div class="input-group">
+										<span class="input-group-addon">Conjunto</span>
+										<select class="form-control">
+										  <option>Seleccionar</option>
+										  <option>Seleccionar</option>
+										  <option>Seleccionar</option>
+										  <option>Seleccionar</option>
+										  <option>Seleccionar</option>
+										</select>
+									</div>
+									<div class="input-group">
+										<span class="input-group-addon">Parte</span>
+										<select class="form-control">
+										  <option>Seleccionar</option>
+										  <option>Seleccionar</option>
+										  <option>Seleccionar</option>
+										  <option>Seleccionar</option>
+										  <option>Seleccionar</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-8">
+								<div class="col-md-4">
+									<div class="panel panel-default">
+									  <div class="panel-heading">Falla</div>
+									  <textarea class="form-control" rows="1" placeholder="Ingresar"></textarea>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="panel panel-default">
+									  <div class="panel-heading">Causa</div>
+									  <textarea class="form-control" rows="1" placeholder="Ingresar"></textarea>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="panel panel-default">
+									  <div class="panel-heading">Solución</div>
+									  <textarea class="form-control" rows="1" placeholder="Ingresar"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="panel panel-default">
+									  <div class="panel-heading">Comentario</div>
+									  <textarea class="form-control" rows="1" placeholder="Ingresar"></textarea>
+									</div>
+									<button type="button" class="btn btn-default pull-right">AGREGAR DIAGNÓSTICO</button>
+								</div>
+							</div>
+						  </div>
+						</div>
+					</div>
+	            </div>
+	            <div class="row">
+	            	<div class="col-md-12">
+						<div class="accordion">
+				            <div class="panel panel-default">
+				                <div class="panel-heading">
+				                    <h4 class="panel-title">
+				                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse_uno" class="collapsed">
+				                        	OPERACIONES
+				                        	<!--
+					                        	<i class="pull-right glyphicon ng-scope glyphicon-chevron-right" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					                        -->
+				                        </a>
+				                    </h4>
+				                </div>
+				                <div id="collapse_uno" class="panel-collapse collapse">
+				                	<div class="panel-body">
+					                	<div class="col-md-4">
+				                    		<div class="wow buscador" style="visibility: visible;">
+												<div class="input-group">
+											      <input type="text" class="form-control" placeholder="Buscar">
+											      <span class="input-group-btn">
+											        <button data-target="#detalle_equipo" data-toggle="collapse" class="btn btn-default large" type="button">
+											        	<span class="glyphicon glyphicon-search"></span>
+											        </button>
+											      </span>
+											    </div>
+											</div>
+											<div class="detalle_equipo collapse" id="detalle_equipo">
+												<a href="#" class="list-group-item draggable drag-drop">
+											     <span>Sacar Radiador</span>
+											     <table width="100%" border="1" style="text-align:center;">
+											     <tr class="dato">
+											     	<td>Sacar radiador camión Mack</td>
+											     	<td>Sin nota de fábrica</td>
+											     	<td>2 hh</td>
+											     </tr> 
+											     </table>
+											    </a>
+											  	
+											    <a href="#" class="list-group-item draggable drag-drop">
+											      <span>Cambio empaquetadura Radiador</span>
+											     <table width="100%" border="1" style="text-align:center;">
+											     	<tr class="dato">
+											     	<td>Sacar radiador camión Mack</td>
+											     	<td>Sin nota de fábrica</td>
+											     	<td>2 hh</td>
+											     </tr> 
+											     </table>
+											    </a>
+											    <a href="#" class="list-group-item draggable drag-drop">
+											     <span>Destapar Radiador</span>
+											     <table width="100%" border="1" style="text-align:center;">
+											     	<tr class="dato">
+											     	<td>Sacar radiador camión Mack</td>
+											     	<td>Sin nota de fábrica</td>
+											     	<td>2 hh</td>
+											     </tr> 
+											     </table>
+											    </a>
+											    <a href="#" class="list-group-item draggable drag-drop">
+											      <span>Montar Radiador</span>
+											     <table width="100%" border="1" style="text-align:center;">
+											     	<tr class="dato">
+											     	<td>Sacar radiador camión Mack</td>
+											     	<td>Sin nota de fábrica</td>
+											     	<td>2 hh</td>
+											     </tr> 
+											     </table>
+											    </a>     
+											</div>
+
+					                	</div>
+					                	<div class="col-md-8">
+					                		<table class="cabecera" width="100%" border="1" style="text-align:center;">
+												<tr>
+													<td>Descripción</td>
+													<td>Notas de Fábrica</td>
+													<td>Tiempo</td>
+												</tr>
+											</table>
+					                		<div id="sortable" class="sortable">
+												
+										 	</div>
+					                	</div>
+				                	</div>
+				            	</div>
+			            	</div>
+			            	<div class="panel panel-default">
+				                <div class="panel-heading">
+				                    <h4 class="panel-title">
+				                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse_dos" class="collapsed">
+				                        	REPUESTOS
+				                        </a>
+				                    </h4>
+				                </div>
+				                <div id="collapse_dos" class="panel-collapse collapse in">
+				                    <div class="panel-body">
+
+				                       	<section class="resumen objetos lista_repuestos">
+											<div id="detalle_objetos" class="collapse lista">
+												<div class="row">
+													<div class="list-group">
+														<div class="list-group-item">
+															<div class="col-md-2">
+																<p>1</p>
+															</div>
+															<div class="col-md-2">
+																<p>A742</p>
+															</div>
+															<div class="col-md-7">
+															    <p>Empaquetadura Radiador</p>
+															</div>
+															<div class="col-md-1 last">
+																<div class="botones">
+																	<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#detalle_objetos">
+																		<span class="glyphicon glyphicon-minus"></span>
+																	</button>
+																</div>
+															</div>
+															<div class="clear"></div>
+														</div>
+													</div>
+								                </div>
+											</div>
+
+											<div id="agregar_nuevo" class="lista agregar_nuevo">
+												<div class="row">
+								                	<div class="col-md-2">
+								                		<div class="panel panel-default">
+														  <div class="panel-heading">Cantidad</div>
+														  <input type="text" class="form-control" placeholder="Ingresar">
+														</div>
+								                    </div>
+								                    <div class="col-md-2">
+								                		<div class="panel panel-default">
+														  <div class="panel-heading">Numero Parte</div>
+														  <input type="text" class="form-control" placeholder="Ingresar">
+														</div>
+								                    </div>
+								                    <div class="col-md-7">
+														<div class="panel panel-default">
+														  <div class="panel-heading">Descripción</div>
+														  <input type="text" class="form-control" placeholder="Ingresar">
+														</div>
+								                    </div>
+								                    <div class="col-md-1 last">
+								                    	<div class="botones">
+															<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#detalle_objetos">
+																<span class="glyphicon glyphicon-plus"></span>
+															</button>
+														</div>
+													</div>
+								                </div>
+							                </div>
+
+										</section>
+
+										<div class="clear"></div>
+									</div>
+									
+			                    </div>
+			                </div>
+			                <!-- materiales -->
+			                <div class="panel panel-default">
+				                <div class="panel-heading">
+				                    <h4 class="panel-title">
+				                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse_tres" class="collapsed">
+				                        	MATERIALES
+				                        </a>
+				                    </h4>
+				                </div>
+				                <div id="collapse_tres" class="panel-collapse collapse">
+				                   <div class="panel-body">
+					                	<div class="col-md-4">
+				                    		<div class="wow buscador" style="visibility: visible;">
+												<div class="input-group">
+											      <input type="text" class="form-control" placeholder="Buscar">
+											      <span class="input-group-btn">
+											        <button data-target="#resultado_materiales" data-toggle="collapse" class="btn btn-default large" type="button">
+											        	<span class="glyphicon glyphicon-search"></span>
+											        </button>
+											      </span>
+											    </div>
+											</div>
+											<div class="detalle_equipo collapse" id="resultado_materiales">
+												<a href="#" class="list-group-item draggable dos drag-drop">
+											     <span>Material 1</span>
+											     <table width="100%" border="1" style="text-align:center;">
+											     <tr class="dato">
+											     	<td>Sacar radiador camión Mack</td>
+											     	<td><input type="text"></td>
+											     </tr> 
+											     </table>
+											    </a>
+											  	
+											    <a href="#" class="list-group-item draggable dos drag-drop">
+											      <span>Material 2</span>
+											     <table width="100%" border="1" style="text-align:center;">
+											     	<tr class="dato">
+											     	<td>Sacar radiador camión Mack</td>
+											     	<td><input type="text"></td>
+											     </tr> 
+											     </table>
+											    </a>
+											    <a href="#" class="list-group-item draggable dos drag-drop">
+											     <span>Material 3</span>
+											     <table width="100%" border="1" style="text-align:center;">
+											     	<tr class="dato">
+											     	<td>Sacar radiador camión Mack</td>
+											     	<td><input type="text"></td>
+											     </tr> 
+											     </table>
+											    </a>
+											    <a href="#" class="list-group-item draggable dos drag-drop">
+											     <span>Material 4</span>
+											     <table width="100%" border="1" style="text-align:center;">
+											     	<tr class="dato">
+											     	<td>Sacar radiador camión Mack</td>
+											     	<td><input type="text"></td>
+											     </tr> 
+											     </table>
+											    </a>     
+											</div>
+											<div class="clear"></div>
+					                	</div>
+					                	<div class="col-md-8">
+					                		<table class="cabecera" width="100%" border="1" style="text-align:center;">
+												<tr>
+													<td>Descripción</td>
+													<td>Cantidad</td>
+												</tr>
+											</table>
+					                		<div id="sortable_dos" class="sortable">
+												
+										 	</div>
+					                	</div>
+				                	</div>
+			                    </div>
+			                </div>
+			                <!-- seervicios -->
+			                <div class="panel panel-default">
+				                <div class="panel-heading">
+				                    <h4 class="panel-title">
+				                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse_cuatro" class="collapsed">
+				                        	SERVICIOS DE TERCEROS
+				                        </a>
+				                    </h4>
+				                </div>
+				                <div id="collapse_cuatro" class="panel-collapse collapse in">
+				                    <div class="panel-body">
+					                	<section class="resumen objetos lista_repuestos">
+											<div id="detalle_servicios" class="collapse lista">
+												<div class="row">
+													<div class="list-group">
+														<div class="list-group-item">
+															<div class="col-md-5">
+															    <p>Jose Caro : Extracción de Perno</p>
+															</div>
+															<div class="col-md-2">
+																<p>3</p>
+															</div>
+															<div class="col-md-2">
+																<p>30/11/14 - 09:00 hrs</p>
+															</div>
+															<div class="col-md-2">
+																<p>$23.990</p>
+															</div>
+															
+															<div class="col-md-1 last">
+																<div class="botones">
+																	<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#detalle_objetos">
+																		<span class="glyphicon glyphicon-minus"></span>
+																	</button>
+																</div>
+															</div>
+															<div class="clear"></div>
+														</div>
+													</div>
+								                </div>
+											</div>
+
+											<div id="agregar_nuevo" class="lista agregar_nuevo">
+												<div class="row">
+													<div class="col-md-5">
+														<div class="panel panel-default">
+														  <div class="panel-heading">Servicio</div>
+														  <input type="text" class="form-control" placeholder="Ingresar">
+														</div>
+								                    </div>
+								                	<div class="col-md-2">
+								                		<div class="panel panel-default">
+														  <div class="panel-heading">Horas</div>
+														  <input type="text" class="form-control" placeholder="Ingresar">
+														</div>
+								                    </div>
+								                    <div class="col-md-2">
+								                		<div class="panel panel-default">
+														  <div class="panel-heading">Fecha Posible</div>
+														  <input type="text" class="form-control" placeholder="Ingresar">
+														</div>
+								                    </div>
+								                    <div class="col-md-2">
+								                		<div class="panel panel-default">
+														  <div class="panel-heading">Precio</div>
+														  <input type="text" class="form-control" placeholder="Ingresar">
+														</div>
+								                    </div>
+								                    
+								                    <div class="col-md-1 last">
+								                    	<div class="botones">
+															<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#detalle_servicios">
+																<span class="glyphicon glyphicon-plus"></span>
+															</button>
+														</div>
+													</div>
+								                </div>
+							                </div>
+
+										</section>
+				                	</div>
+			                    </div>
+			                </div>
+			                </div>
+				        </div>
+				    </div>
+
+				    <div class="col-md-2">
+                		<div class="panel panel-default">
+						  <div class="panel-heading">Tiempo estimado</div>
+						  <input type="text" class="form-control" placeholder="Ingresar">
+						</div>
+                    </div>
+                    <div class="col-md-10">
+                		<div class="panel panel-default">
+						  <div class="panel-heading">Observaciones</div>
+						  <input type="text" class="form-control" placeholder="Ingresar">
+						</div>
+                    </div>
+
+					<button id="boton_cerrar" type="button" class="btn btn-default pull-right" onclick="cerrar_detalle('detalle_ot')" style="display:block;">CERRAR</button>
+			
+	            </div>
+				<div class="clear"></div>
+			  </div>
+
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	<script src="js/jquery_drag.js"></script>
+
+	<!-- JQUERY SCRIPTS 
+    	<script src="assets/js/jquery-1.10.2.js"></script>
+    -->
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
